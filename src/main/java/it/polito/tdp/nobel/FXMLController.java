@@ -39,7 +39,7 @@ public class FXMLController {
     		int numeroCrediti = Integer.parseInt(txtInput.getText());
     			
     		long start = System.currentTimeMillis();
-    		Set<Esame> voti = model.calcolaSottoinsiemeEsami(numeroCrediti);
+    		Set<Esame> voti = model.calcolaSottoinsiemeEsami(numeroCrediti); //Chiamata al metodo del modello
     		long end = System.currentTimeMillis();
     		
     		if(voti == null) {
